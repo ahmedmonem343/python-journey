@@ -1,38 +1,22 @@
-# GPA Calculator
+# Python Journey 🐍
 
-A simple Python application that calculates the average GPA based on the student's subject marks and assigns a final grade.
+Welcome to my Python learning journey.
 
-## Features
+This repository documents my progress as I build real Python projects while learning software engineering fundamentals.
 
-- Calculates GPA
-- Assigns grades
-- Uses user input
-- Uses loops
-- Uses conditional statements
-- Formats output to two decimal places
+## Goals
 
-## Concepts Used
+- Build a strong Python foundation
+- Improve problem-solving skills
+- Learn Git & GitHub
+- Build automation tools
+- Work with APIs
+- Explore AI development
 
-- Variables
-- Input
-- For Loop
-- Arithmetic Operations
-- Accumulator Pattern
-- If / Elif / Else
-- f-Strings
+## Projects
 
-## Example
+| # | Project | Status |
+|---|---------|--------|
+| 01 | GPA Calculator | ✅ Completed |
 
-```text
-Please Enter the number of subjects: 3
-
-Enter subject mark 1: 90
-Enter subject mark 2: 85
-Enter subject mark 3: 95
-
-The GPA is: 90.00 - Grade: Excellent
-```
-
-## Author
-
-Ahmed Monem
+More projects will be added as I continue learning.
