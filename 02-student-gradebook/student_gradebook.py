@@ -42,12 +42,8 @@ while True:
                print(f"{i+1} - {names[i]} - {grades[i]}")
            
 
+        
        
-    
-       
-
-
-   
     elif choice == "3":
         search_name = input("Enter Student name: ").strip().title()
         found = False
@@ -92,9 +88,6 @@ while True:
             average = total / len(grades) 
 
             print(f"Class Average: {average:.2f}")
-
-
-
 
 
 
