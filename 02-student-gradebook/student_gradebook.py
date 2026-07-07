@@ -10,11 +10,11 @@ while True:
     print("3- Search Student")
     print("4- Remove Students")
     print("5- Show Class Average")
-    print("6- Exit")
+    print("6- Update Student Grade")
+    print("7- Exit")
 
     choice = input ("Chose an opetion: ")
-    print(choice)
-    print(type(choice))
+   
      
     
 
@@ -64,18 +64,65 @@ while True:
 
     
     elif choice == "4":
-        print("Remove student selected")
+        enter_name = input("Enter Student name: ").strip().title()
+        found = False
+
+        for i in range(len(names)):
+            if enter_name == names[i]:
+                names.pop (i)
+                grades.pop (i)
+                print(f"{enter_name} removed successfully.")
+                found = True
+                break
+            
+        if not found:
+                print("Student not found")
 
 
 
     elif choice == "5":
-        print("Show student selected")
+        if len(grades) == 0:
+            print("No grades found.")
+        else:
+            total = 0
+
+            for grade in grades:
+                total += grade
+
+            average = total / len(grades) 
+
+            print(f"Class Average: {average:.2f}")
+
+
+
+
 
 
 
     elif choice == "6":
+        student_nam = input("Enter Student name: ").strip().title()
+        found = False
+
+        for i in range (len(names)):
+            if student_nam == names [i]:
+               print(f"Current Grade: {grades[i]}")
+               new_grade =float(input("Enter new grade: "))          
+               grades[i] = new_grade
+               found = True
+               break
+        if not found:
+           print("Student not found.")
+
+    
+
+    elif choice == "7":
+
         print("Goodbye!")
+
         break
+
+
+    
     
     else:
-        print("Invalid option. please choose from 1 to 6.")
+        print("Invalid option. please choose from 1 to 7.")
